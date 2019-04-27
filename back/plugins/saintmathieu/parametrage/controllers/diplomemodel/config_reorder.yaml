@@ -1,0 +1,4 @@
+title: DiplomeModel
+modelClass: saintmathieu\Parametrage\Models\DiplomeModel
+toolbar:
+    buttons: reorder_toolbar

@@ -1,0 +1,10 @@
+name: EgliseController
+form: $/saintmathieu/parametrage/models/eglisemodel/fields.yaml
+modelClass: saintmathieu\Parametrage\Models\EgliseModel
+defaultRedirect: saintmathieu/parametrage/eglisecontroller
+create:
+    redirect: 'saintmathieu/parametrage/eglisecontroller/update/:id'
+    redirectClose: saintmathieu/parametrage/eglisecontroller
+update:
+    redirect: saintmathieu/parametrage/eglisecontroller
+    redirectClose: saintmathieu/parametrage/eglisecontroller

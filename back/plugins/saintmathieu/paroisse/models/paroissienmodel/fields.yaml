@@ -1,0 +1,125 @@
+fields:
+    ceb:
+        label: Ceb
+        nameFrom: denomination
+        descriptionFrom: description
+        span: auto
+        type: relation
+        placeholder: 'Selectionner une ceb'
+        required: 1
+    eglise:
+        label: Eglise
+        nameFrom: denomination
+        descriptionFrom: description
+        span: auto
+        type: relation
+        placeholder: 'Selectionner une église'
+        required: 1
+    nom:
+        label: Nom
+        span: auto
+        type: text
+        required: 1
+    prenom:
+        label: Prénoms
+        span: auto
+        type: text
+        required: 1
+    date_naissance:
+        label: 'Date de naissance'
+        mode: date
+        span: auto
+        type: datepicker
+        required: 1
+    lieu_naissance:
+        label: 'Lieu de naissance'
+        span: auto
+        type: text
+        required: 1
+    habitation:
+        label: Habitation
+        span: auto
+        type: text
+        required: 1
+    telephone:
+        label: Téléphone
+        span: auto
+        required: 1
+        type: text
+        required: 1
+    email:
+        label: Email
+        span: auto
+        type: text
+        required: 1
+    situationmatrimoniale:
+        label: 'Situation Marimoniale'
+        nameFrom: denomination
+        descriptionFrom: description
+        span: auto
+        type: relation
+        placeholder: 'Selectionner une situation'
+        required: 1
+    sexe:
+        label: Sexe
+        options:
+            1: 'Masculin'
+            2: 'Féminin'
+        span: auto
+        type: dropdown
+        required: 1
+    profession:
+        label: Profession
+        nameFrom: denomination
+        descriptionFrom: description
+        span: auto
+        type: relation
+        placeholder: 'Selectionner une profession'
+    lieu_bapteme:
+        label: 'Lieu de baptême'
+        span: auto
+        type: text
+    annee_bapteme:
+        label: 'Année de Baptême'
+        mode: date
+        span: auto
+        type: datepicker
+    lieu_confirmation:
+        label: 'Lieu de confirmation'
+        span: auto
+        type: text
+    date_confirmation:
+        label: 'Date de confirmation'
+        mode: date
+        span: auto
+        type: datepicker
+    nationnalite:
+        label: Nationnalité
+        span: auto
+        type: text
+    dernierdiplome:
+        label: 'Dernier diplome'
+        nameFrom: denomination
+        descriptionFrom: description
+        span: auto
+        type: relation
+        placeholder: 'Selectionner un diplôme'
+        required: 1
+    logo:
+        label: Avatar
+        mode: file
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload
+    cv:
+        label: CV
+        mode: file
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload

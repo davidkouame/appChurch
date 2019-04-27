@@ -1,0 +1,4 @@
+title: CebController
+modelClass: saintmathieu\Parametrage\Models\CebModel
+toolbar:
+    buttons: reorder_toolbar

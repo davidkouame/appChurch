@@ -1,0 +1,13 @@
+columns:
+    denomination:
+        label: Dénomination
+        type: text
+        searchable: true
+    fonction:
+        label: Fonction
+        type: text
+        searchable: true
+    date_creation:
+        label: 'Date de création'
+        type: date
+        searchable: true

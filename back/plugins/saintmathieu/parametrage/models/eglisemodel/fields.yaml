@@ -1,0 +1,14 @@
+fields:
+    denomination:
+        label: Dénomination
+        span: auto
+        type: text
+    fonction:
+        label: Fonction
+        span: auto
+        type: text
+    date_creation:
+        label: 'Date de création'
+        mode: date
+        span: auto
+        type: datepicker

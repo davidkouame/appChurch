@@ -1,0 +1,10 @@
+name: EgliseMouvementController
+form: $/saintmathieu/paroisse/models/eglisemouvement/fields.yaml
+modelClass: saintmathieu\Paroisse\Models\EgliseMouvement
+defaultRedirect: saintmathieu/paroisse/eglisemouvementcontroller
+create:
+    redirect: 'saintmathieu/paroisse/eglisemouvementcontroller/update/:id'
+    redirectClose: saintmathieu/paroisse/eglisemouvementcontroller
+update:
+    redirect: saintmathieu/paroisse/eglisemouvementcontroller
+    redirectClose: saintmathieu/paroisse/eglisemouvementcontroller

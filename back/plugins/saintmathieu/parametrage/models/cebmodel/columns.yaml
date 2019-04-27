@@ -1,0 +1,12 @@
+columns:
+    denomination:
+        label: Dénomination
+        type: text
+        searchable: true
+    lieu_priere:
+        label: 'Lieu de prière'
+        type: text
+        searchable: true
+    date_creation:
+        label: 'Date de création'
+        type: date

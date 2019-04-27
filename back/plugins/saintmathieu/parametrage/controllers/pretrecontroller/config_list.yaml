@@ -1,0 +1,12 @@
+list: $/saintmathieu/parametrage/models/pretremodel/columns.yaml
+modelClass: saintmathieu\Parametrage\Models\PretreModel
+title: PretreController
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'saintmathieu/parametrage/pretrecontroller/update/:id'

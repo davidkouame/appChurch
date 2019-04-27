@@ -1,0 +1,4 @@
+title: ProfessionModel
+modelClass: saintmathieu\Parametrage\Models\ProfessionModel
+toolbar:
+    buttons: reorder_toolbar

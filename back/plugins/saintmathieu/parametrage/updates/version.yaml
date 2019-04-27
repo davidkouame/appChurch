@@ -1,0 +1,35 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table saintmathieu_parametrage_pretre'
+    - builder_table_create_saintmathieu_parametrage_pretre.php
+1.0.3:
+    - 'Created table saintmathieu_parametrage_mouvement'
+    - builder_table_create_saintmathieu_parametrage_mouvement.php
+1.0.4:
+    - 'Updated table saintmathieu_parametrage_mouvement'
+    - builder_table_update_saintmathieu_parametrage_mouvement.php
+1.0.5:
+    - 'Created table saintmathieu_parametrage_ceb'
+    - builder_table_create_saintmathieu_parametrage_ceb.php
+1.0.6:
+    - 'Created table saintmathieu_parametrage_eglise'
+    - builder_table_create_saintmathieu_parametrage_eglise.php
+1.0.7:
+    - 'Created table saintmathieu_parametrage_avantagetravail'
+    - builder_table_create_saintmathieu_parametrage_avantagetravail.php
+1.0.8:
+    - 'Updated table saintmathieu_parametrage_eglise'
+    - builder_table_update_saintmathieu_parametrage_eglise.php
+1.0.9:
+    - 'Created table saintmathieu_parametrage_situation_matrimoniale'
+    - builder_table_create_saintmathieu_parametrage_situation_matrimoniale.php
+1.0.10:
+    - 'Created table saintmathieu_parametrage_profession'
+    - builder_table_create_saintmathieu_parametrage_profession.php
+1.0.11:
+    - 'Created table saintmathieu_parametrage_diplome'
+    - builder_table_create_saintmathieu_parametrage_diplome.php
+1.0.12:
+    - 'Updated table saintmathieu_parametrage_diplome'
+    - builder_table_update_saintmathieu_parametrage_diplome.php
