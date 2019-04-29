@@ -14,5 +14,6 @@ class SituationMatrimonialeController extends Controller
     public function __construct()
     {
         parent::__construct();
+        BackendMenu::setContext('saintmathieu.Parametrage', 'parametrage');
     }
 }

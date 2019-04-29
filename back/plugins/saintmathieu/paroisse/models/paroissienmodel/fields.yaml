@@ -68,6 +68,7 @@ fields:
         span: auto
         type: dropdown
         required: 1
+        placeholder: Selectionner un sexe
     profession:
         label: Profession
         nameFrom: denomination
@@ -97,6 +98,7 @@ fields:
         label: Nationnalité
         span: auto
         type: text
+        required: 1
     dernierdiplome:
         label: 'Dernier diplome'
         nameFrom: denomination
@@ -104,7 +106,6 @@ fields:
         span: auto
         type: relation
         placeholder: 'Selectionner un diplôme'
-        required: 1
     logo:
         label: Avatar
         mode: file

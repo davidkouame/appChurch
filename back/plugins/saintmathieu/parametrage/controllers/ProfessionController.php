@@ -3,7 +3,7 @@
 use Backend\Classes\Controller;
 use BackendMenu;
 
-class Asss extends Controller
+class ProfessionController extends Controller
 {
     public $implement = [        'Backend\Behaviors\ListController',        'Backend\Behaviors\FormController'    ];
     
@@ -13,6 +13,6 @@ class Asss extends Controller
     public function __construct()
     {
         parent::__construct();
-        BackendMenu::setContext('saintmathieu.Parametrage', 'eglises');
+        BackendMenu::setContext('saintmathieu.Parametrage', 'parametrage');
     }
 }

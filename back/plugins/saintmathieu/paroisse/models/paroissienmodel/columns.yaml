@@ -1,4 +1,10 @@
 columns:
+    avatar:
+        label: Avatar
+        type: partial
+        sortable: false
+        clickable: 'false'
+        valueFrom: id
     nom:
         label: Nom
         type: text

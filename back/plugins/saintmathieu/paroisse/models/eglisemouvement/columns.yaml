@@ -1,10 +1,14 @@
 columns:
-    eglise_id:
+    eglise:
         label: Eglise
-        type: relation
         relation: eglise
-    mouvement_id:
-        label: Mouvement
+        select: denomination
         type: text
+    mouvement:
+        label: Mouvement
+        relation: mouvement
         searchable: true
         sortable: true
+        select: denomination
+        type: text
+

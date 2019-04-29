@@ -1,0 +1,10 @@
+name: TotoCebController
+form: $/saintmathieu/parametrage/models/cebmodel/fields.yaml
+modelClass: saintmathieu\Parametrage\Models\CebModel
+defaultRedirect: saintmathieu/parametrage/totocebcontroller
+create:
+    redirect: 'saintmathieu/parametrage/totocebcontroller/update/:id'
+    redirectClose: saintmathieu/parametrage/totocebcontroller
+update:
+    redirect: saintmathieu/parametrage/totocebcontroller
+    redirectClose: saintmathieu/parametrage/totocebcontroller

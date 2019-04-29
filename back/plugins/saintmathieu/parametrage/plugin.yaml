@@ -5,36 +5,36 @@ plugin:
     icon: oc-icon-adjust
     homepage: ''
 navigation:
-
-    cebs:
-        label: Ceb
+    parametrage:
+        label: Parametrages
         url: saintmathieu/parametrage/cebcontroller
         icon: icon-life-ring
-
         sideMenu:
-
+            cebs:
+                label: Cebs
+                url: saintmathieu/parametrage/cebcontroller
+                icon: icon-arrow-right
             eglises:
                 label: Eglises
                 url: saintmathieu/parametrage/eglisecontroller
                 icon: icon-arrow-right
-            
-    mouvements:
-        label: Mouvements
-        url: saintmathieu/parametrage/mouvementcontroller
-        icon: icon-life-ring
-    pretres:
-        label: Pretres
-        url: saintmathieu/parametrage/pretrecontroller
-        icon: icon-life-ring
-    situationmatrimoniales:
-        label: 'Situations matrimoniale'
-        url: saintmathieu/parametrage/situationmatrimonialecontroller
-        icon: icon-life-ring
-    professions:
-        label: Professions
-        url: saintmathieu/parametrage/professionmodel
-        icon: icon-life-ring
-    diplomes:
-        label: Diplomes
-        url: saintmathieu/parametrage/diplomemodel
-        icon: icon-life-ring
+            mouvements:
+                label: Mouvements
+                url: saintmathieu/parametrage/mouvementcontroller
+                icon: icon-arrow-right
+            pretres:
+                label: Pretres
+                url: saintmathieu/parametrage/pretrecontroller
+                icon: icon-arrow-right
+            situationmatrimoniales:
+                label: 'Situations matrimoniale'
+                url: saintmathieu/parametrage/situationmatrimonialecontroller
+                icon: icon-arrow-right
+            professions:
+                label: Professions
+                url: saintmathieu/parametrage/professioncontroller
+                icon: icon-arrow-right
+            diplomes:
+                label: Diplômes
+                url: saintmathieu/parametrage/diplomecontroller
+                icon: icon-arrow-right

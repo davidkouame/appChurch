@@ -23,6 +23,19 @@ class ParoissienModel extends Model
      * @var array Validation rules
      */
     public $rules = [
+        'ceb_id' => 'required',
+        'eglise_id' => 'required',
+        'nom' => 'required',
+        'prenoms' => 'required',
+        'date_naissance' => 'required',
+        'lieu_naissance' => 'required',
+        'habitation' => 'required',
+        'telephone' => 'required',
+        'email' => 'required',
+        'situationmatrimoniale' => 'required',
+        'sexe' => 'required',
+        'profession' => 'required',
+        'nationnalite' => 'required',
     ];
 
     public $attachOne = [
