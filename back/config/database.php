@@ -64,6 +64,18 @@ return [
             'prefix'    => '',
         ],
 
+        /*'mysql' => [
+            'driver'    => 'mysql',
+            'host'      => 'db4free.net',
+            'port'      => 3306,
+            'database'  => 'saintmathieu',
+            'username'  => 'saintmathieu',
+            'password'  => '123456789',
+            'charset'   => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix'    => '',
+        ],*/
+
         'pgsql' => [
             'driver'   => 'pgsql',
             'host'     => 'localhost',
