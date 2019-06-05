@@ -1,0 +1,4 @@
+title: MouvementController
+modelClass: saintmathieu\Parametrage\Models\MouvementModel
+toolbar:
+    buttons: reorder_toolbar

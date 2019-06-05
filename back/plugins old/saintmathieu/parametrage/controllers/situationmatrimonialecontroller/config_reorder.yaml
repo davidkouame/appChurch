@@ -1,0 +1,4 @@
+title: SituationMatrimonialeController
+modelClass: saintmathieu\Parametrage\Models\SituationMatrimonialeModel
+toolbar:
+    buttons: reorder_toolbar

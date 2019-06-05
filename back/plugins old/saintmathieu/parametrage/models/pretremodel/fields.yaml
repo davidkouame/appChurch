@@ -1,0 +1,22 @@
+fields:
+    nom:
+        label: Nom
+        span: auto
+        type: text
+    prenom:
+        label: Prénoms
+        span: auto
+        type: text
+    fonction:
+        label: Fonction
+        span: auto
+        type: text
+    logo:
+        label: Photo
+        mode: file
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload

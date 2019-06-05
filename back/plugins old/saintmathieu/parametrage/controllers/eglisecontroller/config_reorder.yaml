@@ -1,0 +1,4 @@
+title: EgliseController
+modelClass: saintmathieu\Parametrage\Models\EgliseModel
+toolbar:
+    buttons: reorder_toolbar

@@ -1,0 +1,10 @@
+name: ProfessionController
+form: $/saintmathieu/parametrage/models/professionmodel/fields.yaml
+modelClass: saintmathieu\Parametrage\Models\ProfessionModel
+defaultRedirect: saintmathieu/parametrage/professioncontroller
+create:
+    redirect: 'saintmathieu/parametrage/professioncontroller/update/:id'
+    redirectClose: saintmathieu/parametrage/professioncontroller
+update:
+    redirect: saintmathieu/parametrage/professioncontroller
+    redirectClose: saintmathieu/parametrage/professioncontroller

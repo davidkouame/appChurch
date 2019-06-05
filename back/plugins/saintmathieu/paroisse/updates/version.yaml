@@ -21,3 +21,9 @@
 1.0.8:
     - 'Updated table saintmathieu_paroisse_activite'
     - builder_table_update_saintmathieu_paroisse_activite.php
+1.0.9:
+    - 'Updated table saintmathieu_paroisse_paroissien'
+    - builder_table_update_saintmathieu_paroisse_paroissien_4.php
+1.0.10:
+    - 'Updated table saintmathieu_paroisse_paroissien'
+    - builder_table_update_saintmathieu_paroisse_paroissien_5.php

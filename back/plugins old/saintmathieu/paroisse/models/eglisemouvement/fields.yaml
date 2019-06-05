@@ -1,0 +1,15 @@
+fields:
+    eglise:
+        label: Eglise
+        nameFrom: denomination
+        descriptionFrom: description
+        span: auto
+        type: relation
+        placeholder: 'Selectionner une église'
+    mouvement:
+        label: Mouvement
+        nameFrom: denomination
+        descriptionFrom: description
+        span: auto
+        type: relation
+        placeholder: 'Selectionner un mouvement'

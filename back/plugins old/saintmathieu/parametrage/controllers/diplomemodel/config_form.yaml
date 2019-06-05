@@ -1,0 +1,10 @@
+name: DiplomeModel
+form: $/saintmathieu/parametrage/models/diplomemodel/fields.yaml
+modelClass: saintmathieu\Parametrage\Models\DiplomeModel
+defaultRedirect: saintmathieu/parametrage/diplomemodel
+create:
+    redirect: 'saintmathieu/parametrage/diplomemodel/update/:id'
+    redirectClose: saintmathieu/parametrage/diplomemodel
+update:
+    redirect: saintmathieu/parametrage/diplomemodel
+    redirectClose: saintmathieu/parametrage/diplomemodel

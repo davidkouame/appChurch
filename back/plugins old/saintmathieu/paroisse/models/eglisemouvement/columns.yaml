@@ -1,0 +1,14 @@
+columns:
+    eglise:
+        label: Eglise
+        relation: eglise
+        select: denomination
+        type: text
+    mouvement:
+        label: Mouvement
+        relation: mouvement
+        searchable: true
+        sortable: true
+        select: denomination
+        type: text
+

@@ -1,0 +1,11 @@
+name: CebController
+modelClass: saintmathieu\Parametrage\Models\CebModel
+form: $/saintmathieu/parametrage/models/cebmodel/fields.yaml
+defaultRedirect: saintmathieu/parametrage/cebcontroller
+create:
+    redirect: 'saintmathieu/parametrage/cebcontroller/update/:id'
+    redirectClose: saintmathieu/parametrage/cebcontroller
+update:
+    redirect: saintmathieu/parametrage/cebcontroller
+    redirectClose: saintmathieu/parametrage/cebcontroller
+preview: {  }

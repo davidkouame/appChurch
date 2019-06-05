@@ -23,7 +23,7 @@ class ParoissienModel extends Model
      * @var array Validation rules
      */
     public $rules = [
-        'ceb_id' => 'required',
+        /*'ceb_id' => 'required',
         'eglise_id' => 'required',
         'nom' => 'required',
         'prenoms' => 'required',
@@ -35,8 +35,16 @@ class ParoissienModel extends Model
         'situationmatrimoniale' => 'required',
         'sexe' => 'required',
         'profession' => 'required',
-        'nationnalite' => 'required',
+        'nationnalite' => 'required',*/
     ];
+    
+    public $fillable = [
+                        'nom','eglise_id', 'ceb_id', 'nom', 'prenom', 
+                        'date_naissance', 'lieu_naissance', 'habitation', 
+                        'telephone', 'sexe', 'profession_id', 'lieu_bapteme',
+                        'annee_bapteme', 'lieu_confirmation', 'date_confirmation',
+                        'nationnalite', 'situationmatrimoniale_id', 'dernierdiplome_id',
+                        'email'];
 
     public $attachOne = [
         'logo' => \System\Models\File::class,
