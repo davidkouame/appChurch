@@ -1,0 +1,23 @@
+fields:
+    libelle:
+        label: Libelle
+        span: auto
+        type: text
+    date_debut:
+        label: 'Date début'
+        mode: date
+        span: auto
+        type: datepicker
+    date_fin:
+        label: 'Date fin'
+        span: auto
+        mode: date
+        type: datepicker
+    paroissien:
+        label: Paroissien
+        span: auto
+        nameFrom: name
+        descriptionFrom: description
+        select: nom
+        type: relation
+        placeholder: Sélectionner un paroissien

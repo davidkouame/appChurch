@@ -1,0 +1,19 @@
+columns:
+    libelle:
+        label: Libelle
+        type: text
+        searchable: true
+    date_debut:
+        label: 'Date début'
+        type: date
+        searchable: true
+    date_fin:
+        label: 'Date fin'
+        type: date
+        searchable: true
+    paroissien:
+        label: Paroissien
+        type: text
+        searchable: true
+        select: concat(nom,' ', prenom)
+        relation: paroissien

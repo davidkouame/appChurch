@@ -1,0 +1,10 @@
+name: ExperienceController
+form: $/saintmathieu/paroisse/models/experiencemodel/fields.yaml
+modelClass: saintmathieu\Paroisse\Models\ExperienceModel
+defaultRedirect: saintmathieu/paroisse/experiencecontroller
+create:
+    redirect: 'saintmathieu/paroisse/experiencecontroller/update/:id'
+    redirectClose: saintmathieu/paroisse/experiencecontroller
+update:
+    redirect: saintmathieu/paroisse/experiencecontroller
+    redirectClose: saintmathieu/paroisse/experiencecontroller

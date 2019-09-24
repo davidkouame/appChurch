@@ -1,0 +1,10 @@
+name: DiplomeController
+form: $/saintmathieu/paroisse/models/diplomemodel/fields.yaml
+modelClass: saintmathieu\Paroisse\Models\DiplomeModel
+defaultRedirect: saintmathieu/paroisse/diplomecontroller
+create:
+    redirect: 'saintmathieu/paroisse/diplomecontroller/update/:id'
+    redirectClose: saintmathieu/paroisse/diplomecontroller
+update:
+    redirect: saintmathieu/paroisse/diplomecontroller
+    redirectClose: saintmathieu/paroisse/diplomecontroller

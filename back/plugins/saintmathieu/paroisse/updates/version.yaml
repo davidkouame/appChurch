@@ -27,3 +27,15 @@
 1.0.10:
     - 'Updated table saintmathieu_paroisse_paroissien'
     - builder_table_update_saintmathieu_paroisse_paroissien_5.php
+1.0.11:
+    - 'Created table saintmathieu_paroisse_diplome'
+    - builder_table_create_saintmathieu_paroisse_diplome.php
+1.0.12:
+    - 'Updated table saintmathieu_paroisse_diplome'
+    - builder_table_update_saintmathieu_paroisse_diplome.php
+1.0.13:
+    - 'Created table saintmathieu_paroisse_'
+    - builder_table_create_saintmathieu_paroisse_.php
+1.0.14:
+    - 'Updated table saintmathieu_paroisse_'
+    - builder_table_update_saintmathieu_paroisse_experience.php

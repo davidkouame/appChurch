@@ -9,14 +9,12 @@ navigation:
         label: Paroissiens
         url: saintmathieu/paroisse/paroissiencontroller
         icon: icon-life-ring
-    
     activite:
         label: Activites
         url: saintmathieu/paroisse/activitecontroller
         icon: icon-life-ring
-
         sideMenu:
             eglisesmouvements:
-            label: 'Eglises Mouvements'
-            url: saintmathieu/paroisse/eglisemouvementcontroller
-            icon: icon-life-ring
+                label: 'Eglises Mouvements'
+                url: saintmathieu/paroisse/eglisemouvementcontroller
+                icon: icon-life-ring

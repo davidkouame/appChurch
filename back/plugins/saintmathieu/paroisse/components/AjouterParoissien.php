@@ -60,6 +60,7 @@ class AjouterParoissien extends ComponentBase
         try{
             // recuperation des données
             $data = post();
+            dd($data);
             
             $rules = [
                     "nom" => "required",

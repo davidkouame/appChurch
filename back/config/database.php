@@ -58,7 +58,7 @@ return [
             'port'      => 3306,
             'database'  => 'appChurch',
             'username'  => 'dks',
-            'password'  => '29121990marie',
+            'password'  => 'dks',
             'charset'   => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
             'prefix'    => '',

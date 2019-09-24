@@ -25,7 +25,8 @@
 </div>
 <form class="row form-elements" data-request="onRegister"  
       data-request-files data-request-flash  accept-charset="UTF8" 
-      enctype="multipart/form-data" style="margin: 0px 8%;">
+      enctype="multipart/form-data" style="margin: 0px 8%;" id="saveParoissien">
+      <input type="text" name="diplomes" id="diplomes" hidden>
     <div class="col-md-12">
         <div class="row">
             <div class="form-group col-md-6">
@@ -146,14 +147,53 @@
                     <option value="2">Mariée</option>
                 </select>
             </div>
-            <div class="form-group col-md-6">
-                <label>Diplômes <span class="required">*</span></label>
-                <select class="form-control" name="diplome">
+            <div class="form-group col-md-12">
+                <label>Diplômes <a class="btn btn-danger" id="openModalCreateDiplome" href="#">ajouter un diplôme</a> <!--<span class="required">*</span>--></label>
+                <!--<select class="form-control" name="diplome">
                     <option value="">Sélectionnez votre dernier diplôme</option>
                     {% for diplome in diplomes %}
                     <option value="{{ diplome.id }}">{{ diplome.denomination }}</option>
                     {% endfor %}
-                </select>
+                </select>-->
+                <div class="row">
+                    <table class="table" id="tableDiplome">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">Libellé</th>
+                          <th scope="col">Date début</th>
+                          <th scope="col">Date fin</th>
+                          <th scope="col">Actions</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr id="firstTrDiplome">
+                          <th scope="row" colspan="5" style="text-align: center;">Aucun diplôme</th>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="form-group col-md-12">
+                <label>Expériences professionnelles <a class="btn btn-danger" id="openModalCreateExperience" href="#">ajouter une expérience</a></label>
+                <div class="row">
+                    <table class="table" id="tableExperience">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">Libellé</th>
+                          <th scope="col">Date début</th>
+                          <th scope="col">Date fin</th>
+                          <th scope="col">Actions</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr id="firstTrExperience">
+                          <th scope="row" colspan="5" style="text-align: center;">Aucun diplôme</th>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
@@ -164,5 +204,4 @@
         </div>
     </div>
 </form>
-
 {% endif %}

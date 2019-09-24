@@ -259,4 +259,11 @@
   'saintmathieu\\parametrage\\Controllers\\situationmatrimonialecontroller' => 'plugins/saintmathieu/parametrage/controllers/situationmatrimonialecontroller.php',
   'saintmathieu\\parametrage\\Controllers\\professioncontroller' => 'plugins/saintmathieu/parametrage/controllers/professioncontroller.php',
   'saintmathieu\\parametrage\\Controllers\\diplomecontroller' => 'plugins/saintmathieu/parametrage/controllers/diplomecontroller.php',
+  'Cms\\Twig\\ComponentNode' => 'modules/cms/twig/ComponentNode.php',
+  'Cms\\Classes\\ComponentPartial' => 'modules/cms/classes/ComponentPartial.php',
+  'Cms\\Helpers\\File' => 'modules/cms/helpers/File.php',
+  'Cms\\Twig\\FlashNode' => 'modules/cms/twig/FlashNode.php',
+  'saintmathieu\\Paroisse\\Models\\DiplomeModel' => 'plugins/saintmathieu/paroisse/models/DiplomeModel.php',
+  'Saintmathieu\\Paroisse\\Models\\ParoissienModel' => 'plugins/saintmathieu/paroisse/models/ParoissienModel.php',
+  'saintmathieu\\Paroisse\\Models\\ExperienceModel' => 'plugins/saintmathieu/paroisse/models/ExperienceModel.php',
 );

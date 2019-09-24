@@ -60,13 +60,142 @@ description = "Saint Mathieu Layout"
         <!-- Scripts -->
         {% partial 'site/scriptsnavabar' %}
 
+        <div class="modal fade" id="createDiplomeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Ajouter un diplôme</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Libellé:</label>
+                    <input type="text" name="libelle" class="form-control" id="libelleDiplome">
+                  </div>
+                  <div class="form-group">
+                    <label for="message-text" class="col-form-label">Date début:</label>
+                    <input type="date" name="date_debut" class="form-control" id="dateDebutDiplome">
+                  </div>
+                  <div class="form-group">
+                    <label for="message-text" class="col-form-label">Date fin:</label>
+                    <input type="date" name="date_fin" class="form-control" id="dateFinDiplome">
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+                <button type="button" class="btn btn-primary" id="saveDiplome">Ajouter</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="createExperienceModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Ajouter une expérience professionnelle</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Libellé:</label>
+                    <input type="text" name="libelle" class="form-control" id="libelleExperience">
+                  </div>
+                  <div class="form-group">
+                    <label for="message-text" class="col-form-label">Date début:</label>
+                    <input type="date" name="date_debut" class="form-control" id="dateDebutExperience">
+                  </div>
+                  <div class="form-group">
+                    <label for="message-text" class="col-form-label">Date fin:</label>
+                    <input type="date" name="date_fin" class="form-control" id="dateFinExperience">
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+                <button type="button" class="btn btn-primary" id="saveExperience">Ajouter</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <script>
             $(document).ready(function () {
                 $("html").removeAttr("font-size");
                 var $j = jQuery.noConflict();
+                var lengthTr = 1;
+                var dataTable = null;
                 // $j('.datepicker').datepicker({dateFormat: 'yyyy-mm-dd'});
+
+                $("#openModalCreateDiplome").click(function(){
+                    $("#createDiplomeModal").modal();
+                });
+
+                $("#openModalCreateExperience").click(function(){
+                    $("#createExperienceModal").modal();
+                });
+
+                $("#saveDiplome").click(function(){
+                    if(lengthTr == 1){
+                        $("#firstTrDiplome").empty();
+                    }
+                    let tdlibelleDiplome = '<td class="libelleDiplome" data-libellediplome="'+$("#libelleDiplome").val()+'">'+$("#libelleDiplome").val()+'</td>';
+                    let tdDateDebutDiplome = '<td class="dateDebutDiplome" data-datedebutdiplome="'+$("#dateDebutDiplome").val()+'">'+$("#dateDebutDiplome").val()+'</td>';
+                    let tdDateFinDiplome = '<td class="dateFinDiplome" data-datefindiplome="'+$("#dateFinDiplome").val()+'">'+$("#dateFinDiplome").val()+'</td>';
+                    var content = '<tr scope="row" class="dataDiplome" data-diplome_id="'+lengthTr+'"><th scope="row">1</th>'+tdlibelleDiplome+tdDateDebutDiplome+tdDateFinDiplome+
+                    '<td><a class="btn btn-danger supprimerDiplome" href="#">supprimer</a><a class="btn btn-primary modifierDiplome" href="#">edit</a></td></tr>';
+                    $("#tableDiplome tbody").append(content);
+                    $("#libelleDiplome").val("");
+                    $("#dateDebutDiplome").val("");
+                    $("#dateFinDiplome").val("");
+                    lengthTr+=1;
+                    $("#createDiplomeModal").modal('toggle');
+                });
+
+                $("#saveExperience").click(function(){
+                    if(lengthTr == 0){
+                        $("#firstTrExperience").empty();
+                    }
+                    var content = '<tr scope="row"><th scope="row">1</th><td>'+
+                    $("#libelleExperience").val()+'</td><td>'+$("#dateDebutExperience").val()
+                    +'</td><td>'+$("#dateFinExperience").val()+'</td><td><a class="btn btn-danger supprimerExperience" href="#">supprimer</a><a class="btn btn-primary modifierExperience" href="#">edit</a></td></tr>';
+                    $("#tableExperience tbody").append(content);
+                    $("#libelleExperience").val("");
+                    $("#dateDebutExperience").val("");
+                    $("#dateFinExperience").val("");
+                    lengthTr+=1;
+                    $("#createExperienceModal").modal('toggle');
+                });
+
+                $(".supprimerDiplome").click(function(){
+
+                });
+
+                $(".modifierDiplome").click(function(){
+
+                });
+
+                $("#saveParoissien").submit(function(){
+                    let datasDiplomes = [];
+                    $(".dataDiplome").each(function(e){
+                        let dataDiplome = $(this);
+                        let libelleDiplome = dataDiplome.find('.libelleDiplome').data('libellediplome');
+                        let dateDebutDiplome = dataDiplome.find('.dateDebutDiplome').data('datedebutdiplome');
+                        let dateFinDiplome = dataDiplome.find('.dateFinDiplome').data('datefindiplome');
+                        datasDiplomes.push({"libelle" : libelleDiplome, "date_debut": dateDebutDiplome, "date_fin": dateFinDiplome});
+                    });
+                    $("input[name='diplomes'").val(JSON.stringify(datasDiplomes));
+                    // $("input[name='diplomes'").val("ssdfsd");
+                    return true;
+                });
             });
-</script>
         </script>
     </body>
 </html>
