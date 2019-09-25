@@ -1,0 +1,7 @@
+export:
+    title: Exporter les paroissiens
+    modelClass: saintmathieu\Paroisse\Models\ParoissienModelExport
+    list: $/saintmathieu/paroisse/models/paroissienmodel/paroissien_export_columns.yaml
+    #useList:
+    #    raw: true
+    fileName: export_paroissiens.csv

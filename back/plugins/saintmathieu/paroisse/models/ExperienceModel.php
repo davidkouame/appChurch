@@ -25,7 +25,7 @@ class ExperienceModel extends Model
     public $rules = [
     ];
 
-    public $belongsTo = [
+    /*public $belongsTo = [
         'paroissien'=>['Saintmathieu\Paroisse\Models\ParoissienModel','Key'=>'paroissien_id','otherKey'=>'id']
-    ];
+    ];*/
 }

@@ -1,5 +1,0 @@
-fields:
-    dd:
-        label: Text
-        span: auto
-        type: text

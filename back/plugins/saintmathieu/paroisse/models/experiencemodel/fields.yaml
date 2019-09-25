@@ -13,11 +13,11 @@ fields:
         span: auto
         mode: date
         type: datepicker
-    paroissien:
-        label: Paroissien
-        span: auto
-        nameFrom: name
-        descriptionFrom: description
-        select: nom
-        type: relation
-        placeholder: Sélectionner un paroissien
+    #paroissien:
+    #    label: Paroissien
+    #    span: auto
+    #    nameFrom: name
+    #    descriptionFrom: description
+    #    select: nom
+    #    type: relation
+    #    placeholder: Sélectionner un paroissien

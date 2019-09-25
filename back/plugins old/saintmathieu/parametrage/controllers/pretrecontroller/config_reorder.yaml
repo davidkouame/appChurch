@@ -1,4 +1,0 @@
-title: PretreController
-modelClass: saintmathieu\Parametrage\Models\PretreModel
-toolbar:
-    buttons: reorder_toolbar

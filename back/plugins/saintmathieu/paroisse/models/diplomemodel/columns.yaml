@@ -1,8 +1,10 @@
 columns:
-    libelle:
+    diplome:
         label: Libelle
-        type: text
+        type: relation
         searchable: true
+        relation: diplome
+        select: denomination
     date_debut:
         label: 'Date début'
         type: date
@@ -11,9 +13,9 @@ columns:
         label: 'Date fin'
         type: date
         searchable: true
-    paroissien:
-        label: Paroissien
-        type: text
-        searchable: true
-        select: concat(nom,' ', prenom)
-        relation: paroissien
+    #paroissien:
+    #    label: Paroissien
+    #    type: text
+    #    searchable: true
+    #    select: concat(nom,' ', prenom)
+    #    relation: paroissien

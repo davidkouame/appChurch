@@ -22,3 +22,7 @@ columns:
         type: date
         invisible: false
         sortable: true
+    dernierdiplome:
+        label: Dernier diplôme
+        type: partial
+        path: dernierdiplome

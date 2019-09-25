@@ -1,5 +1,0 @@
-fields:
-    denomination:
-        label: Dénomination
-        span: auto
-        type: text

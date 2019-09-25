@@ -58,4 +58,44 @@ class ParoissienModel extends Model
         'profession'=>['SaintMathieu\Parametrage\Models\ProfessionModel','Key'=>'profession_id','otherKey'=>'id'],
         'dernierdiplome'=>['SaintMathieu\Parametrage\Models\DiplomeModel','Key'=>'dernierdiplome_id','otherKey'=>'id'],
 	];
+    
+    public $hasMany = [
+        'diplomes' => [
+            'saintmathieu\Paroisse\Models\DiplomeModel',
+            'key' => 'paroissien_id',
+        ],
+        'experiences' => [
+            'saintmathieu\Paroisse\Models\ExperienceModel',
+            'key' => 'paroissien_id',
+        ]
+    ];
+    
+    public function scopeFilterByDiplome($query, $filter) {
+        return $query->whereHas('diplomes', function($diplomes) use ($filter) {
+            $diplomes->whereIn('diplome_id', $filter);
+        });
+    }
+    
+    public function scopeFilterByExperience($query, $filter) {
+        return $query->whereHas('experiences', function($experiences) use ($filter) {
+            $experiences->whereIn('id', $filter);
+        });
+    }
+    
+    public function getDernierAttribute(){
+        if($this->diplomes && $this->diplomes->last() && $this->diplomes->last()->diplome){
+            return $this->diplomes->last()->diplome->denomination;
+        }else{
+            return null;
+        }
+    }
+    
+    /*public function toArray()
+    {
+        $array = parent::toArray();
+        
+        $array['dernier'] = "fdsfds";
+        
+        return $array;
+    }*/
 }

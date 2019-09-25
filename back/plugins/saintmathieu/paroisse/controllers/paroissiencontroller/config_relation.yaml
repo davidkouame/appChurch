@@ -1,0 +1,18 @@
+diplomes:
+    label: "Diplômes"
+    view:
+        list: $/saintmathieu/paroisse/models/diplomemodel/columns.yaml
+        toolbarButtons: create | delete 
+    manage:
+        form: $/saintmathieu/paroisse/models/diplomemodel/fields.yaml
+        title: 'Ajouter un diplôme'
+        list: $/saintmathieu/paroisse/models/diplomemodel/columns.yaml
+experiences:
+    label: "Expériences"
+    view:
+        list: $/saintmathieu/paroisse/models/experiencemodel/columns.yaml
+        toolbarButtons: create | delete 
+    manage:
+        form: $/saintmathieu/paroisse/models/experiencemodel/fields.yaml
+        title: 'Ajouter une expérience'
+        list: $/saintmathieu/paroisse/models/experiencemodel/columns.yaml

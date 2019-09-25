@@ -1,5 +1,0 @@
-columns:
-    denomination:
-        label: Dénomination
-        type: text
-        searchable: true

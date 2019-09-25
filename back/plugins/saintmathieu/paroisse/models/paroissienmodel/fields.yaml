@@ -124,3 +124,13 @@ fields:
             extension: auto
         span: auto
         type: fileupload
+    diplomes:
+        label: Diplômes
+        span: full
+        path: diplomes
+        type: partial
+    experiences:
+        label: Expériences
+        span: full
+        path: experiences
+        type: partial

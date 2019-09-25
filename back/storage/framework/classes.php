@@ -266,4 +266,6 @@
   'saintmathieu\\Paroisse\\Models\\DiplomeModel' => 'plugins/saintmathieu/paroisse/models/DiplomeModel.php',
   'Saintmathieu\\Paroisse\\Models\\ParoissienModel' => 'plugins/saintmathieu/paroisse/models/ParoissienModel.php',
   'saintmathieu\\Paroisse\\Models\\ExperienceModel' => 'plugins/saintmathieu/paroisse/models/ExperienceModel.php',
+  'Backend\\Behaviors\\RelationController' => 'modules/backend/behaviors/RelationController.php',
+  'saintmathieu\\Paroisse\\Models\\ParoissienModelExport' => 'plugins/saintmathieu/paroisse/models/ParoissienModelExport.php',
 );

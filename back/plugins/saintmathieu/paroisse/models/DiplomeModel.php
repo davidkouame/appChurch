@@ -26,6 +26,6 @@ class DiplomeModel extends Model
     ];
 
     public $belongsTo = [
-        'paroissien'=>['Saintmathieu\Paroisse\Models\ParoissienModel','Key'=>'paroissien_id','otherKey'=>'id']
+        'diplome'=>['Saintmathieu\Parametrage\Models\DiplomeModel','Key'=>'diplome_id','otherKey'=>'id']
     ];
 }

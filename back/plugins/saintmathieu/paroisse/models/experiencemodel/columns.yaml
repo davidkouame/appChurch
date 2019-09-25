@@ -11,9 +11,9 @@ columns:
         label: 'Date fin'
         type: date
         searchable: true
-    paroissien:
-        label: Paroissien
-        type: text
-        searchable: true
-        select: concat(nom,' ', prenom)
-        relation: paroissien
+    #paroissien:
+    #    label: Paroissien
+    #    type: text
+    #    searchable: true
+    #    select: concat(nom,' ', prenom)
+    #    relation: paroissien

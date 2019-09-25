@@ -1,0 +1,11 @@
+scopes:
+    diplome:
+        label: 'Diplome'
+        modelClass: saintmathieu\Parametrage\Models\DiplomeModel
+        nameFrom: denomination
+        scope: filterByDiplome
+    experience:
+        label: 'Expérience'
+        modelClass: saintmathieu\Paroisse\Models\ExperienceModel
+        nameFrom: libelle
+        scope: filterByExperience

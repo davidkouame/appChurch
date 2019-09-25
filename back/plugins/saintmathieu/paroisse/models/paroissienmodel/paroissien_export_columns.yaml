@@ -1,0 +1,10 @@
+columns:
+    nom:
+        label: Nom
+        type: text
+    prenom:
+        label: Prénoms
+        type: text
+    date_naissance:
+        label: 'Date de nassance'
+        type: date

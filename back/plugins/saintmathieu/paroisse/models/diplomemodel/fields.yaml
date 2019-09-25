@@ -1,8 +1,12 @@
 fields:
-    libelle:
-        label: Libelle
+    diplome:
+        label: Diplôme
+        nameFrom: denomination
+        descriptionFrom: description
         span: auto
-        type: text
+        type: relation
+        placeholder: 'Selectionner un diplôme'
+        required: 1
     date_debut:
         label: 'Date début'
         mode: date
@@ -13,11 +17,11 @@ fields:
         span: auto
         mode: date
         type: datepicker
-    paroissien:
-        label: Paroissien
-        span: auto
-        nameFrom: name
-        descriptionFrom: description
-        select: nom
-        type: relation
-        placeholder: Sélectionner un paroissien
+    #paroissien:
+    #    label: Paroissien
+    #    span: auto
+    #    nameFrom: name
+    #    descriptionFrom: description
+    #    select: nom
+    #    type: relation
+    #    placeholder: Sélectionner un paroissien

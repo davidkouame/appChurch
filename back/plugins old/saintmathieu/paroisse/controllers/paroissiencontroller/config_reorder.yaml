@@ -1,4 +1,0 @@
-title: ParoissienController
-modelClass: saintmathieu\Paroisse\Models\ParoissienModel
-toolbar:
-    buttons: reorder_toolbar

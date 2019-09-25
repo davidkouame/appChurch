@@ -1,8 +1,26 @@
-1569395588a:1:{s:10:"succes.htm";a:8:{s:8:"fileName";s:10:"succes.htm";s:7:"content";s:1931:"title = "Page not found (404)"
-url = "/success-add-paroissien"
-layout = "saintmathieunavbar"
-==
-<style>
+<?php
+
+/* /var/www/html/appChurch/back/themes/responsiv-clean/pages/succes.htm */
+class __TwigTemplate_49b384115b41690e0c7be04d1b322fdefc8440ee15da575d63c92073d5d5dd92 extends Twig_Template
+{
+    private $source;
+
+    public function __construct(Twig_Environment $env)
+    {
+        parent::__construct($env);
+
+        $this->source = $this->getSourceContext();
+
+        $this->parent = false;
+
+        $this->blocks = [
+        ];
+    }
+
+    protected function doDisplay(array $context, array $blocks = [])
+    {
+        // line 1
+        echo "<style>
     /*--thank you pop starts here--*/
     .thank-you-pop{
         width:100%;
@@ -67,17 +85,40 @@ layout = "saintmathieunavbar"
 
 </style>
 
-<div class="modal-body" style="padding-bottom: 0px;padding-top: 0px;">
+<div class=\"modal-body\" style=\"padding-bottom: 0px;padding-top: 0px;\">
 
-    <div class="thank-you-pop">
-        <img src="http://goactionstations.co.uk/wp-content/uploads/2017/03/Green-Round-Tick.png" alt="">
+    <div class=\"thank-you-pop\">
+        <img src=\"http://goactionstations.co.uk/wp-content/uploads/2017/03/Green-Round-Tick.png\" alt=\"\">
         <h1>Mes félicitations!</h1>
         <p>Votre enregistrement a été éffectué avec succès !</p>
-        <h3><a href="{{ url('/') }}" style="color: #fff;cursor: pointer;text-decoration: none;">Effectuez un nouvel enregistrement</a></h3>
+        <h3><a href=\"";
+        // line 72
+        echo url("/");
+        echo "\" style=\"color: #fff;cursor: pointer;text-decoration: none;\">Effectuez un nouvel enregistrement</a></h3>
 
     </div>
 
-</div>";s:5:"mtime";i:1569263118;s:6:"markup";s:1835:"<style>
+</div>";
+    }
+
+    public function getTemplateName()
+    {
+        return "/var/www/html/appChurch/back/themes/responsiv-clean/pages/succes.htm";
+    }
+
+    public function isTraitable()
+    {
+        return false;
+    }
+
+    public function getDebugInfo()
+    {
+        return array (  96 => 72,  23 => 1,);
+    }
+
+    public function getSourceContext()
+    {
+        return new Twig_Source("<style>
     /*--thank you pop starts here--*/
     .thank-you-pop{
         width:100%;
@@ -142,14 +183,16 @@ layout = "saintmathieunavbar"
 
 </style>
 
-<div class="modal-body" style="padding-bottom: 0px;padding-top: 0px;">
+<div class=\"modal-body\" style=\"padding-bottom: 0px;padding-top: 0px;\">
 
-    <div class="thank-you-pop">
-        <img src="http://goactionstations.co.uk/wp-content/uploads/2017/03/Green-Round-Tick.png" alt="">
+    <div class=\"thank-you-pop\">
+        <img src=\"http://goactionstations.co.uk/wp-content/uploads/2017/03/Green-Round-Tick.png\" alt=\"\">
         <h1>Mes félicitations!</h1>
         <p>Votre enregistrement a été éffectué avec succès !</p>
-        <h3><a href="{{ url('/') }}" style="color: #fff;cursor: pointer;text-decoration: none;">Effectuez un nouvel enregistrement</a></h3>
+        <h3><a href=\"{{ url('/') }}\" style=\"color: #fff;cursor: pointer;text-decoration: none;\">Effectuez un nouvel enregistrement</a></h3>
 
     </div>
 
-</div>";s:4:"code";N;s:5:"title";s:20:"Page not found (404)";s:3:"url";s:23:"/success-add-paroissien";s:6:"layout";s:18:"saintmathieunavbar";}}
+</div>", "/var/www/html/appChurch/back/themes/responsiv-clean/pages/succes.htm", "");
+    }
+}
