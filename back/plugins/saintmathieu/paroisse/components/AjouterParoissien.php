@@ -99,8 +99,8 @@ class AjouterParoissien extends ComponentBase
         foreach ($diplomes as $dipl){
             $diplome = new saintmathieu\Paroisse\Models\DiplomeModel;
             $diplome->diplome_id = $dipl['libelle'];
-            $diplome->date_debut = $dipl['date_debut'];
-            $diplome->date_fin = $dipl['date_fin'];
+            $diplome->date_debut = $this->formatDate($dipl['date_debut']);
+            $diplome->date_fin = $this->formatDate($dipl['date_fin']);
             $diplome->paroissien_id = $paroissien_id;
             $diplome->save();
         }
@@ -116,8 +116,8 @@ class AjouterParoissien extends ComponentBase
         foreach ($experiences as $exp){
             $experience = new saintmathieu\Paroisse\Models\ExperienceModel();
             $experience->libelle = $exp['libelle'];
-            $experience->date_debut = $exp['date_debut'];
-            $experience->date_fin = $exp['date_fin'];
+            $experience->date_debut = $this->formatDate($exp['date_debut']);
+            $experience->date_fin = $this->formatDate($exp['date_fin']);
             $experience->paroissien_id = $paroissien_id;
             $experience->save();
         }
@@ -140,11 +140,15 @@ class AjouterParoissien extends ComponentBase
             $data["date_confirmation"] = $this->formatDate($data["date_confirmation"]);
             DB::transaction(function () use($paroisse, $data){
                 $unsetData = $data;
-                unset($unsetData['diplomes']);
                 $paroisse->fill($data);
                 $paroisse->save();
-                $this->saveDiplomes($data['diplomes'], $paroisse->id);
-                $this->saveExperiences($data['experiences'], $paroisse->id);
+                if(array_key_exists("diplomes", $data)){
+                    unset($unsetData['diplomes']);
+                    $this->saveDiplomes($data['diplomes'], $paroisse->id);
+                }
+                if(array_key_exists("experiences", $data)){
+                    $this->saveExperiences($data['experiences'], $paroisse->id);
+                }
             }, 5);
             return Redirect::to('/success-add-paroissien');
         } catch (Exception $ex) {
@@ -158,5 +162,41 @@ class AjouterParoissien extends ComponentBase
     {
         $time = strtotime($date);
         return date('Y-m-d', $time);
+    }
+    
+    public function onCheckValiationCreateDiplome(){
+        $data = post();
+        $rules = [
+            "libelle" => "required",
+            "date_debut" => "required",
+            "date_fin" => "required"
+        ];
+        $messages = [
+            'libelle.required' => 'Le champ libellé est obligatoire.',
+            'date_debut.required' => 'Le champ date début est obligatoire.',
+            'date_fin.required' => 'Le champ date de fin est obligatoire.'
+        ];
+        $validation = Validator::make($data, $rules, $messages);
+        if ($validation->fails()) {
+            throw new ValidationException($validation);
+        }
+    }
+
+    public function onCheckValiationCreateExperience(){
+        $data = post();
+        $rules = [
+            "libelle" => "required",
+            "date_debut" => "required",
+            "date_fin" => "required"
+        ];
+        $messages = [
+            'libelle.required' => 'Le champ libellé est obligatoire.',
+            'date_debut.required' => 'Le champ date début est obligatoire.',
+            'date_fin.required' => 'Le champ date de fin est obligatoire.'
+        ];
+        $validation = Validator::make($data, $rules, $messages);
+        if ($validation->fails()) {
+            throw new ValidationException($validation);
+        }
     }
 }

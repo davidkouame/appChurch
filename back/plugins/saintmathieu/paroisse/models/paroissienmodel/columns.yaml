@@ -26,3 +26,8 @@ columns:
         label: Dernier diplôme
         type: partial
         path: dernierdiplome
+    created_at:
+        label: 'Date de création'
+        type: datetime
+        invisible: true
+        sortable: true

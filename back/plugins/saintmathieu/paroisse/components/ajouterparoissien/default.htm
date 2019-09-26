@@ -46,7 +46,7 @@
                 </select>
             </div>
             <div class="form-group col-md-6">
-                <label>Eglise <span class="required">*</span></label>
+                <label>Centre paroissiable <span class="required">*</span></label>
                 <select class="form-control" name="eglise">
                     <option value="">Sélectionnez votre centre paroissial</option>
                     {% for eglise in eglises %}
@@ -146,8 +146,8 @@
                     <option value="2">Mariée</option>
                 </select>
             </div>
-            <div class="form-group col-md-12">
-                <label>Diplômes <a class="btn btn-danger" id="openModalCreateDiplome" href="#">ajouter un diplôme</a> <!--<span class="required">*</span>--></label>
+            <div class="form-group col-md-12"> 
+                <label>Diplômes <a class="btn btn-danger" id="openModalCreateDiplome" style="cursor: pointer;color: #fff;">ajouter un diplôme</a> <!--<span class="required">*</span>--></label>
                 <!--<select class="form-control" name="diplome">
                     <option value="">Sélectionnez votre dernier diplôme</option>
                     {% for diplome in diplomes %}
@@ -158,7 +158,7 @@
                     <table class="table" id="tableDiplome">
                       <thead>
                         <tr>
-                          <th scope="col">#</th>
+                          <!-- <th scope="col">#</th> -->
                           <th scope="col">Libellé</th>
                           <th scope="col">Date début</th>
                           <th scope="col">Date fin</th>
@@ -174,12 +174,12 @@
                 </div>
             </div>
             <div class="form-group col-md-12">
-                <label>Expériences professionnelles <a class="btn btn-danger" id="openModalCreateExperience" href="#">ajouter une expérience</a></label>
+                <label>Expériences professionnelles <a class="btn btn-danger" id="openModalCreateExperience" style="cursor: pointer;color: #fff;">ajouter une expérience</a></label>
                 <div class="row">
                     <table class="table" id="tableExperience">
                       <thead>
                         <tr>
-                          <th scope="col">#</th>
+                          <!-- <th scope="col">#</th> -->
                           <th scope="col">Libellé</th>
                           <th scope="col">Date début</th>
                           <th scope="col">Date fin</th>
@@ -188,7 +188,7 @@
                       </thead>
                       <tbody>
                         <tr id="firstTrExperience">
-                          <th scope="row" colspan="5" style="text-align: center;">Aucun diplôme</th>
+                          <th scope="row" colspan="5" style="text-align: center;">Aucune Expérience</th>
                         </tr>
                       </tbody>
                     </table>

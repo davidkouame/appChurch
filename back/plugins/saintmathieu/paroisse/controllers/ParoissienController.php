@@ -18,4 +18,9 @@ class ParoissienController extends Controller
     {
         parent::__construct();
     }
+
+    public function listExtendQuery($query)
+    {
+        $query->orderBy('created_at', 'desc');
+    }
 }
