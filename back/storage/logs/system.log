@@ -15051,3 +15051,5 @@ Stack trace:
 [2019-09-26 14:38:12] dev.INFO: Warning: List column type "relation" for class "saintmathieu\Paroisse\Models\DiplomeModel" is not valid.  
 [2019-09-26 14:47:38] dev.INFO: Warning: List column type "relation" for class "saintmathieu\Paroisse\Models\DiplomeModel" is not valid.  
 [2019-09-26 14:47:38] dev.INFO: Warning: List column type "relation" for class "saintmathieu\Paroisse\Models\DiplomeModel" is not valid.  
+[2019-09-26 16:17:05] dev.INFO: Warning: List column type "relation" for class "saintmathieu\Paroisse\Models\DiplomeModel" is not valid.  
+[2019-09-26 16:17:05] dev.INFO: Warning: List column type "relation" for class "saintmathieu\Paroisse\Models\DiplomeModel" is not valid.  
